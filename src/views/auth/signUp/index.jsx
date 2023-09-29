@@ -48,7 +48,7 @@ import {FcGoogle} from "react-icons/fc";
 import {MdOutlineRemoveRedEye} from "react-icons/md";
 import {RiEyeCloseLine} from "react-icons/ri";
 
-function SignIn() {
+function SignUp() {
     // Chakra color mode
     const textColor = useColorModeValue("navy.700", "white");
     const textColorSecondary = "gray.400";
@@ -97,7 +97,7 @@ function SignIn() {
                 flexDirection='column'>
                 <Box me='auto'>
                     <Heading color={textColor} fontSize='36px' mb='10px'>
-                        Sign In
+                        Welcome to Radiate!
                     </Heading>
                     <Text
                         mb='36px'
@@ -105,10 +105,10 @@ function SignIn() {
                         color={textColorSecondary}
                         fontWeight='400'
                         fontSize='md'>
-                        New to Radiate?
-                        <NavLink to='/auth/sign-up'>
+                        Have an account already?
+                        <NavLink to='/auth/sign-in'>
                             <Text color={textColorBrand} as='span' ms='5px' fontWeight='500'>
-                                Create an account
+                                Login
                             </Text>
                         </NavLink>
                     </Text>
@@ -146,7 +146,7 @@ function SignIn() {
                         _active={googleActive}
                         _focus={googleActive}>
                         <Icon as={FcGoogle} w='20px' h='20px' me='10px'/>
-                        Sign in with Google
+                        Sign up with Google
                     </Button>
                     <Flex align='center' mb='25px'>
                         <HSeparator/>
@@ -165,6 +165,19 @@ function SignIn() {
                             md: "0px"
                         }}
                             type='email'
+                            placeholder='Full Name*'
+                            mb='24px'
+                            fontWeight='500'
+                            size='lg'/>
+                        <Input
+                            isRequired={true}
+                            variant='auth'
+                            fontSize='sm'
+                            ms={{
+                            base: "0px",
+                            md: "0px"
+                        }}
+                            type='email'
                             placeholder='Email address*'
                             mb='24px'
                             fontWeight='500'
@@ -173,7 +186,7 @@ function SignIn() {
                             <Input
                                 isRequired={true}
                                 fontSize='sm'
-                                placeholder='Password*'
+                                placeholder='Password* (min. 8 characters)'
                                 mb='24px'
                                 size='lg'
                                 type={show
@@ -192,24 +205,7 @@ function SignIn() {
                                     onClick={handleClick}/>
                             </InputRightElement>
                         </InputGroup>
-                        <Flex justifyContent='space-between' align='center' mb='24px'>
-                            <FormControl display='flex' alignItems='center'>
-                                <Checkbox id='remember-login' colorScheme='brandScheme' me='10px'/>
-                                <FormLabel
-                                    htmlFor='remember-login'
-                                    mb='0'
-                                    fontWeight='normal'
-                                    color={textColor}
-                                    fontSize='sm'>
-                                    Keep me logged in
-                                </FormLabel>
-                            </FormControl>
-                            <NavLink to='/auth/forgot-password'>
-                                <Text color={textColorSecondary} fontSize='sm' w='124px' fontWeight='500'>
-                                    Forgot password?
-                                </Text>
-                            </NavLink>
-                        </Flex>
+
                         <Button
                             fontSize='sm'
                             variant='brand'
@@ -217,7 +213,7 @@ function SignIn() {
                             w='100%'
                             h='50'
                             mb='24px'>
-                            Sign In
+                            Create account
                         </Button>
                     </FormControl>
                 </Flex>
@@ -226,4 +222,4 @@ function SignIn() {
     );
 }
 
-export default SignIn;
+export default SignUp;
