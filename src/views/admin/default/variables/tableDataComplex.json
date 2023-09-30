@@ -1,26 +1,38 @@
 [
   {
-    "name":"Horizon UI PRO",
-    "status": "Approved",
-    "date": "18 Apr 2022",
-    "progress": 75.5  
+    "name":"Patient name",
+    "age": 23,
+    "method": "Video call",
+    "date": "Sep 30, 2023",  
+    "time": "09:00—10:30 AM (60 min)", 
+    "topic": "Anxiety, Job and Career",  
+    "status": "Confirmed"  
   },
   {
-    "name":"Horizon UI Free",
-    "status": "Disable",
-    "date": "18 Apr 2022",
-    "progress": 25.5  
+    "name":"Patient name",
+    "age": 28,
+    "method": "Chat",
+    "date": "Sep 30, 2023",  
+    "time": "03:00—03:30 PM (30 min)", 
+    "topic": "Sleep, Depression, Relationship",  
+    "status": "Confirmed"  
   },
   {
-    "name":"Marketplace",
-    "status": "Error",
-    "date": "20 May 2021",
-    "progress": 90  
+    "name":"Patient name",
+    "age": 19,
+    "method": "Video call",
+    "date": "Oct 1, 2023",  
+    "time": "00:00—00:30 AM (30 min)", 
+    "topic": "Self Esteem",  
+    "status": "Declined"  
   },
   {
-    "name":"Weekly Updates",
-    "status": "Approved",
-    "date": "12 Jul 2021",
-    "progress": 50.5  
+    "name":"Patient name",
+    "age": 19,
+    "method": "Video call",
+    "date": "Oct 2, 2023",  
+    "time": "01:00—01:30 PM (30 min)", 
+    "topic": "Self Esteem",  
+    "status": "Waiting confirmation"  
   }
 ]

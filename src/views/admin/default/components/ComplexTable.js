@@ -1,7 +1,6 @@
 import {
   Flex,
   Table,
-  Progress,
   Icon,
   Tbody,
   Td,
@@ -63,9 +62,9 @@ export default function ColumnsTable(props) {
         <Text
           color={textColor}
           fontSize='22px'
-          fontWeight='700'
+          fontWeight='700'AGE
           lineHeight='100%'>
-          Complex Table
+          Appointments
         </Text>
         <Menu />
       </Flex>
@@ -104,7 +103,43 @@ export default function ColumnsTable(props) {
                         {cell.value}
                       </Text>
                     );
-                  } else if (cell.column.Header === "STATUS") {
+                  }
+                  else if (cell.column.Header === "AGE") {
+                    data = (
+                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                        {cell.value}
+                      </Text>
+                    );
+                  }
+                  else if (cell.column.Header === "METHOD") {
+                    data = (
+                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                        {cell.value}
+                      </Text>
+                    );
+                  }
+                  else if (cell.column.Header === "DATE") {
+                    data = (
+                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                        {cell.value}
+                      </Text>
+                    );
+                  }
+                  else if (cell.column.Header === "TIME") {
+                    data = (
+                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                        {cell.value}
+                      </Text>
+                    );
+                  }
+                  else if (cell.column.Header === "TOPIC") {
+                    data = (
+                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                        {cell.value}
+                      </Text>
+                    );
+                  }
+                  else if (cell.column.Header === "STATUS") {
                     data = (
                       <Flex align='center'>
                         <Icon
@@ -112,20 +147,20 @@ export default function ColumnsTable(props) {
                           h='24px'
                           me='5px'
                           color={
-                            cell.value === "Approved"
+                            cell.value === "Confirmed"
                               ? "green.500"
-                              : cell.value === "Disable"
+                              : cell.value === "Declined"
                               ? "red.500"
-                              : cell.value === "Error"
+                              : cell.value === "Waiting confirmation"
                               ? "orange.500"
                               : null
                           }
                           as={
-                            cell.value === "Approved"
+                            cell.value === "Confirmed"
                               ? MdCheckCircle
-                              : cell.value === "Disable"
+                              : cell.value === "Declined"
                               ? MdCancel
-                              : cell.value === "Error"
+                              : cell.value === "Waiting confirmation"
                               ? MdOutlineError
                               : null
                           }
@@ -133,24 +168,6 @@ export default function ColumnsTable(props) {
                         <Text color={textColor} fontSize='sm' fontWeight='700'>
                           {cell.value}
                         </Text>
-                      </Flex>
-                    );
-                  } else if (cell.column.Header === "DATE") {
-                    data = (
-                      <Text color={textColor} fontSize='sm' fontWeight='700'>
-                        {cell.value}
-                      </Text>
-                    );
-                  } else if (cell.column.Header === "PROGRESS") {
-                    data = (
-                      <Flex align='center'>
-                        <Progress
-                          variant='table'
-                          colorScheme='brandScheme'
-                          h='8px'
-                          w='108px'
-                          value={cell.value}
-                        />
                       </Flex>
                     );
                   }
