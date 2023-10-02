@@ -25,11 +25,11 @@ import {Box, SimpleGrid} from "@chakra-ui/react";
 
 // Custom components
 import React from "react";
-import TodaySchedule from "views/admin/default/components/TodaySchedule";
 import TotalSpent from "views/admin/default/components/TotalSpent";
 import ComplexTable from "views/admin/default/components/ComplexTable";
 import {columnsDataComplex} from "views/admin/default/variables/columnsData";
 import tableDataComplex from "views/admin/default/variables/tableDataComplex.json";
+import TodayAppointments from "./components/TodayAppointments";
 
 export default function UserReports() {
     return (
@@ -48,7 +48,7 @@ export default function UserReports() {
             }}
                 gap='20px'
                 mb='20px'>
-                <TodaySchedule/>
+                <TodayAppointments/>
                 <TotalSpent/>
             </SimpleGrid>
 

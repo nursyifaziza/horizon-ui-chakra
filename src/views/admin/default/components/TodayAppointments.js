@@ -6,7 +6,7 @@ import Card from "components/card/Card.js";
 import Appointment from "views/admin/default/components/Appointment";
 import React from "react";
 
-export default function TodaySchedule(props) {
+export default function TodaySessions(props) {
     const {
         ...rest
     } = props;
@@ -26,9 +26,9 @@ export default function TodaySchedule(props) {
 
             <Stack direction="row" spacing="auto" align="center">
                 <Text color={textColor} fontSize='22px' fontWeight='700' AGE lineHeight='100%'>
-                    Schedule for Today
+                    Today Sessions
                 </Text>
-                <Button fontWeight={500} size="sm" variant="outline">View all schedule</Button>
+                <Button fontWeight={500} size="sm" variant="outline">View all</Button>
             </Stack>
 
             <Appointment/> 

@@ -25,43 +25,15 @@ import React from "react";
 // Chakra imports
 import {
     Box,
-    Button,
-    Flex,
-    Grid,
-    Link,
-    Text,
-    useColorModeValue,
-    SimpleGrid,
     Stack,
     Container
 } from "@chakra-ui/react";
 
-// Custom components
-import TodaySchedule from "views/admin/default/components/TodaySchedule";
-import TableTopCreators from "views/admin/marketplace/components/TableTopCreators";
-import HistoryItem from "views/admin/marketplace/components/HistoryItem";
-import NFT from "components/card/NFT";
-import Card from "components/card/Card.js";
-
 // Assets
 import EventCalendar from "components/calendar/MiniCalendar"
-import Nft1 from "assets/img/nfts/Nft1.png";
-import Nft2 from "assets/img/nfts/Nft2.png";
-import Nft3 from "assets/img/nfts/Nft3.png";
-import Nft4 from "assets/img/nfts/Nft4.png";
-import Nft5 from "assets/img/nfts/Nft5.png";
-import Nft6 from "assets/img/nfts/Nft6.png";
-import Avatar1 from "assets/img/avatars/avatar1.png";
-import Avatar2 from "assets/img/avatars/avatar2.png";
-import Avatar3 from "assets/img/avatars/avatar3.png";
-import Avatar4 from "assets/img/avatars/avatar4.png";
-import tableDataTopCreators from "views/admin/marketplace/variables/tableDataTopCreators.json";
-import {tableColumnsTopCreators} from "views/admin/marketplace/variables/tableColumnsTopCreators";
+import TodayAppointments from "../default/components/TodayAppointments";
 
 export default function Marketplace() {
-    // Chakra Color Mode
-    const textColor = useColorModeValue("secondaryGray.900", "white");
-    const textColorBrand = useColorModeValue("brand.500", "white");
     return (
         <Box
             pt={{
@@ -72,10 +44,10 @@ export default function Marketplace() {
             <Stack direction={"row"}>
                 <Stack direction={"column"}>
                     <EventCalendar/>
-                    <TodaySchedule/>
+                    <TodayAppointments/>
                 </Stack>
                 <Container>
-                    <TodaySchedule/>
+                    <TodayAppointments/>
                 </Container>
             </Stack>
         </Box>
