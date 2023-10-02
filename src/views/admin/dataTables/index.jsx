@@ -21,8 +21,8 @@
 */
 
 // Chakra imports
-import {Box, SimpleGrid} from "@chakra-ui/react";
-import ComplexTable from "views/admin/default/components/ComplexTable";
+import {Box} from "@chakra-ui/react";
+import AppointmentsTable from "views/admin/default/components/AppointmentsTable";
 import {columnsDataComplex} from "views/admin/default/variables/columnsData";
 import tableDataComplex from "views/admin/default/variables/tableDataComplex.json";
 
@@ -38,7 +38,7 @@ export default function Settings() {
             xl: "80px"
         }}>
             <Box>
-                <ComplexTable columnsData={columnsDataComplex} tableData={tableDataComplex}/>
+                <AppointmentsTable columnsData={columnsDataComplex} tableData={tableDataComplex}/>
             </Box>
         </Box>
     );

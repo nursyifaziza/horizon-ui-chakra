@@ -50,7 +50,7 @@ export default function ColumnsTable(props) {
   } = tableInstance;
   initialState.pageSize = 5;
 
-  const textColor = useColorModeValue("secondaryGray.900", "white");
+  const textColor = useColorModeValue("black.500", "white");
   const borderColor = useColorModeValue("gray.200", "whiteAlpha.100");
   return (
     <Card
@@ -99,42 +99,42 @@ export default function ColumnsTable(props) {
                   let data = "";
                   if (cell.column.Header === "NAME") {
                     data = (
-                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                      <Text color={textColor} fontSize='sm'>
                         {cell.value}
                       </Text>
                     );
                   }
                   else if (cell.column.Header === "AGE") {
                     data = (
-                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                      <Text color={textColor} fontSize='sm'>
                         {cell.value}
                       </Text>
                     );
                   }
                   else if (cell.column.Header === "METHOD") {
                     data = (
-                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                      <Text color={textColor} fontSize='sm'>
                         {cell.value}
                       </Text>
                     );
                   }
                   else if (cell.column.Header === "DATE") {
                     data = (
-                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                      <Text color={textColor} fontSize='sm'>
                         {cell.value}
                       </Text>
                     );
                   }
                   else if (cell.column.Header === "TIME") {
                     data = (
-                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                      <Text color={textColor} fontSize='sm'>
                         {cell.value}
                       </Text>
                     );
                   }
                   else if (cell.column.Header === "TOPIC") {
                     data = (
-                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                      <Text color={textColor} fontSize='sm'>
                         {cell.value}
                       </Text>
                     );

@@ -23,11 +23,7 @@
 import React from "react";
 
 // Chakra imports
-import {
-    Box,
-    Stack,
-    Container
-} from "@chakra-ui/react";
+import {Box, Stack, Container, VStack, Flex} from "@chakra-ui/react";
 
 // Assets
 import EventCalendar from "components/calendar/MiniCalendar"
@@ -35,21 +31,21 @@ import TodayAppointments from "../default/components/TodayAppointments";
 
 export default function Marketplace() {
     return (
-        <Box
+        <Stack
             pt={{
             base: "180px",
             md: "80px",
             xl: "80px"
         }}>
             <Stack direction={"row"}>
-                <Stack direction={"column"}>
+                <VStack spacing={4} align="stretch">
                     <EventCalendar/>
                     <TodayAppointments/>
-                </Stack>
+                </VStack>
                 <Container>
                     <TodayAppointments/>
                 </Container>
             </Stack>
-        </Box>
+        </Stack>
     );
 }

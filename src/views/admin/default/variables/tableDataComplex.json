@@ -4,7 +4,7 @@
     "age": 23,
     "method": "Video call",
     "date": "Sep 30, 2023",  
-    "time": "09:00—10:30 AM (60 min)", 
+    "time": "09:00–10:30 AM (60 min)", 
     "topic": "Anxiety, Job and Career",  
     "status": "Confirmed"  
   },
@@ -13,7 +13,7 @@
     "age": 28,
     "method": "Chat",
     "date": "Sep 30, 2023",  
-    "time": "03:00—03:30 PM (30 min)", 
+    "time": "03:00–03:30 PM (30 min)", 
     "topic": "Sleep, Depression, Relationship",  
     "status": "Confirmed"  
   },
@@ -22,7 +22,7 @@
     "age": 19,
     "method": "Video call",
     "date": "Oct 1, 2023",  
-    "time": "00:00—00:30 AM (30 min)", 
+    "time": "00:00–00:30 AM (30 min)", 
     "topic": "Self Esteem",  
     "status": "Declined"  
   },
@@ -31,7 +31,7 @@
     "age": 19,
     "method": "Video call",
     "date": "Oct 2, 2023",  
-    "time": "01:00—01:30 PM (30 min)", 
+    "time": "01:00–01:30 PM (30 min)", 
     "topic": "Self Esteem",  
     "status": "Waiting confirmation"  
   }

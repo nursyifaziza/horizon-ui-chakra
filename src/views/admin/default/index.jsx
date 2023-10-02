@@ -26,7 +26,7 @@ import {Box, SimpleGrid} from "@chakra-ui/react";
 // Custom components
 import React from "react";
 import TotalSpent from "views/admin/default/components/TotalSpent";
-import ComplexTable from "views/admin/default/components/ComplexTable";
+import AppointmentsTable from "views/admin/default/components/AppointmentsTable";
 import {columnsDataComplex} from "views/admin/default/variables/columnsData";
 import tableDataComplex from "views/admin/default/variables/tableDataComplex.json";
 import TodayAppointments from "./components/TodayAppointments";
@@ -53,7 +53,7 @@ export default function UserReports() {
             </SimpleGrid>
 
             <Box>
-                <ComplexTable columnsData={columnsDataComplex} tableData={tableDataComplex}/>
+                <AppointmentsTable columnsData={columnsDataComplex} tableData={tableDataComplex}/>
             </Box>
 
         </Box>
