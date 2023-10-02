@@ -28,9 +28,12 @@ import {
     Box,
     Button,
     Checkbox,
+    CheckboxGroup,
     Flex,
     FormControl,
     FormLabel,
+    Grid,
+    GridItem,
     Heading,
     Icon,
     Input,
@@ -132,30 +135,8 @@ function SignUp() {
                     base: "20px",
                     md: "auto"
                 }}>
-                    <Button
-                        fontSize='sm'
-                        me='0px'
-                        mb='26px'
-                        py='15px'
-                        h='50px'
-                        borderRadius='16px'
-                        bg={googleBg}
-                        color={googleText}
-                        fontWeight='500'
-                        _hover={googleHover}
-                        _active={googleActive}
-                        _focus={googleActive}>
-                        <Icon as={FcGoogle} w='20px' h='20px' me='10px'/>
-                        Sign up with Google
-                    </Button>
-                    <Flex align='center' mb='25px'>
-                        <HSeparator/>
-                        <Text color='gray.400' mx='14px'>
-                            or
-                        </Text>
-                        <HSeparator/>
-                    </Flex>
                     <FormControl>
+                        <FormLabel>Full Name</FormLabel>
                         <Input
                             isRequired={true}
                             variant='auth'
@@ -164,11 +145,12 @@ function SignUp() {
                             base: "0px",
                             md: "0px"
                         }}
-                            type='email'
+                            type='text'
                             placeholder='Full Name*'
                             mb='24px'
                             fontWeight='500'
                             size='lg'/>
+                        <FormLabel>Email</FormLabel>
                         <Input
                             isRequired={true}
                             variant='auth'
@@ -178,10 +160,11 @@ function SignUp() {
                             md: "0px"
                         }}
                             type='email'
-                            placeholder='Email address*'
+                            placeholder='Email Address*'
                             mb='24px'
                             fontWeight='500'
                             size='lg'/>
+                        <FormLabel>Password</FormLabel>
                         <InputGroup size='md'>
                             <Input
                                 isRequired={true}
@@ -205,7 +188,116 @@ function SignUp() {
                                     onClick={handleClick}/>
                             </InputRightElement>
                         </InputGroup>
-
+                        <FormLabel>Practice License ID</FormLabel>
+                        <Input
+                            isRequired={true}
+                            variant='auth'
+                            fontSize='sm'
+                            ms={{
+                            base: "0px",
+                            md: "0px"
+                        }}
+                            type='text'
+                            placeholder='Practice License ID*'
+                            mb='24px'
+                            fontWeight='500'
+                            size='lg'/>
+                        <FormLabel>City</FormLabel>
+                        <Input
+                            isRequired={true}
+                            variant='auth'
+                            fontSize='sm'
+                            ms={{
+                            base: "0px",
+                            md: "0px"
+                        }}
+                            type='text'
+                            placeholder='City*'
+                            mb='24px'
+                            fontWeight='500'
+                            size='lg'/>
+                        <FormLabel>Phone Number</FormLabel>
+                        <Input
+                            isRequired={true}
+                            variant='auth'
+                            fontSize='sm'
+                            ms={{
+                            base: "0px",
+                            md: "0px"
+                        }}
+                            type='number'
+                            placeholder='ex. 0851122334455'
+                            mb='24px'
+                            fontWeight='500'
+                            size='lg'/>
+                        <FormLabel>Education</FormLabel>
+                        <Input
+                            isRequired={true}
+                            variant='auth'
+                            fontSize='sm'
+                            ms={{
+                            base: "0px",
+                            md: "0px"
+                        }}
+                            type='text'
+                            placeholder='ex. Bachelor of Psychology'
+                            mb='24px'
+                            fontWeight='500'
+                            size='lg'/>
+                        <FormLabel>Current Job</FormLabel>
+                        <Input
+                            isRequired={true}
+                            variant='auth'
+                            fontSize='sm'
+                            ms={{
+                            base: "0px",
+                            md: "0px"
+                        }}
+                            type='text'
+                            placeholder='ex. Rehabilitation Doctor at Merdeka Hospital'
+                            mb='24px'
+                            fontWeight='500'
+                            size='lg'/>
+                        <FormLabel>Proficiency</FormLabel>
+                        <Input
+                            isRequired={true}
+                            variant='auth'
+                            fontSize='sm'
+                            ms={{
+                            base: "0px",
+                            md: "0px"
+                        }}
+                            type='text'
+                            placeholder='ex. Family, Study and school life, Mood and Emotion, etc'
+                            mb='24px'
+                            fontWeight='500'
+                            size='lg'/>
+                        <FormLabel>Available Days</FormLabel>
+                        <CheckboxGroup colorScheme='brandScheme'>
+                            <Grid templateColumns='repeat(3, 1fr)' gap={6}>
+                            <Checkbox value='monday'>Monday</Checkbox>
+                                <Checkbox value='tuesday'>Tuesday</Checkbox>
+                                <Checkbox value='wednesday'>Wednesday</Checkbox>
+                                <Checkbox value='thursday'>Thursday</Checkbox>
+                                <Checkbox value='friday'>Friday</Checkbox>
+                                <Checkbox value='saturday'>Saturday</Checkbox>
+                                <Checkbox value='sunday'>Sunday</Checkbox>
+                            </Grid>
+                        </CheckboxGroup>
+                        <FormLabel mt={5} >Your Motivation</FormLabel>
+                        <Input
+                            isRequired={true}
+                            variant='auth'
+                            fontSize='sm'
+                            ms={{
+                            base: "0px",
+                            md: "0px"
+                        }}
+                            type='text'
+                            placeholder='ex. I want to contribute as a professional expert'
+                            mb='24px'
+                            fontWeight='500'
+                            size='lg'/>
                         <Button
                             fontSize='sm'
                             variant='brand'

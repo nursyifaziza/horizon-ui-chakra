@@ -132,7 +132,7 @@ function SignIn() {
                     base: "20px",
                     md: "auto"
                 }}>
-                    <Button
+                    {/* <Button
                         fontSize='sm'
                         me='0px'
                         mb='26px'
@@ -154,8 +154,9 @@ function SignIn() {
                             or
                         </Text>
                         <HSeparator/>
-                    </Flex>
+                    </Flex> */}
                     <FormControl>
+                        <FormLabel>Email</FormLabel>
                         <Input
                             isRequired={true}
                             variant='auth'
@@ -169,6 +170,7 @@ function SignIn() {
                             mb='24px'
                             fontWeight='500'
                             size='lg'/>
+                        <FormLabel>Password</FormLabel>
                         <InputGroup size='md'>
                             <Input
                                 isRequired={true}
