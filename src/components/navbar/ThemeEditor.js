@@ -5,10 +5,12 @@ import {
   ThemeEditorColors,
   ThemeEditorFontSizes
 } from '@hypertheme-editor/chakra-ui'
-import { Button, Icon } from '@chakra-ui/react'
+import { Button, Icon, useColorMode } from '@chakra-ui/react'
 import { CgColorPicker } from 'react-icons/cg'
 import { ImFontSize } from 'react-icons/im'
 import { MdPalette } from 'react-icons/md'
+
+import { IoMdMoon, IoMdSunny } from "react-icons/io";
 
 export function ThemeEditor(props) {
     return (
@@ -20,6 +22,21 @@ export function ThemeEditor(props) {
           </ThemeEditorDrawer>
         </ThemeEditorContainer>
       )
+}
+
+export function ThemeButton() {
+  const { colorMode, toggleColorMode } = useColorMode();
+
+  return (
+    <Button onClick={toggleColorMode} bg="transparent" >
+      <Icon
+        h='24px'
+        w='24px'
+        color={colorMode === "light" ? 'black' : 'white'}
+        as={colorMode === "light" ? IoMdMoon : IoMdSunny}
+      />
+    </Button>
+  )
 }
 
 function ThemeEditorButton({ onOpen, navbarIcon, ...rest }) {
