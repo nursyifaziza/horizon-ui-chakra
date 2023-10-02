@@ -253,11 +253,11 @@ export const pieChartData = [63, 25, 12];
 
 export const lineChartDataTotalSpent = [
   {
-    name: "Revenue",
+    name: "Video call",
     data: [50, 64, 48, 66, 49, 68],
   },
   {
-    name: "Profit",
+    name: "Chat",
     data: [30, 40, 24, 46, 20, 46],
   },
 ];
@@ -276,11 +276,11 @@ export const lineChartOptionsTotalSpent = {
       color: "#4318FF",
     },
   },
-  colors: ["#4318FF", "#39B8FF"],
+  colors: ["#66C95B", "#FFC464"],
   markers: {
     size: 0,
     colors: "white",
-    strokeColors: "#7551FF",
+    strokeColors: "#66C95B",
     strokeWidth: 3,
     strokeOpacity: 0.9,
     strokeDashArray: 0,

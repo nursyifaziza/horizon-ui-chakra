@@ -7,11 +7,13 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+
 // Custom components
 import Card from "components/card/Card.js";
 import LineChart from "components/charts/LineChart";
 import React from "react";
-import { MdBarChart, MdOutlineCalendarToday } from "react-icons/md";
+import { MdOutlineCalendarToday } from "react-icons/md";
+
 // Assets
 import { RiArrowUpSFill } from "react-icons/ri";
 import {
@@ -23,7 +25,6 @@ export default function TotalSpent(props) {
   const { ...rest } = props;
 
   // Chakra Color Mode
-
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const textColorSecondary = useColorModeValue("secondaryGray.600", "white");
   const boxBg = useColorModeValue("secondaryGray.300", "whiteAlpha.100");
