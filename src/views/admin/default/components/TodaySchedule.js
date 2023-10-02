@@ -1,12 +1,10 @@
 // Chakra imports
 import {Button, Stack, Text, useColorModeValue} from "@chakra-ui/react";
+
 // Custom components
 import Card from "components/card/Card.js";
 import Appointment from "views/admin/default/components/Appointment";
 import React from "react";
-
-// Assets
-import {RiArrowUpSFill} from "react-icons/ri";
 
 export default function TodaySchedule(props) {
     const {
@@ -15,8 +13,7 @@ export default function TodaySchedule(props) {
 
     // Chakra Color Mode
     const textColor = useColorModeValue("secondaryGray.900", "white");
-    const textColorSecondary = useColorModeValue("secondaryGray.600", "white");
-    const boxBg = useColorModeValue("secondaryGray.300", "whiteAlpha.100");
+
 
     return (
         <Card
@@ -31,7 +28,7 @@ export default function TodaySchedule(props) {
                 <Text color={textColor} fontSize='22px' fontWeight='700' AGE lineHeight='100%'>
                     Schedule for Today
                 </Text>
-                <Button size="sm" variant="outline">View all schedule</Button>
+                <Button fontWeight={500} size="sm" variant="outline">View all schedule</Button>
             </Stack>
 
             <Appointment/> 
