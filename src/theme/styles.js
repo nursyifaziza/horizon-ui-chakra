@@ -2,15 +2,15 @@ import { mode } from "@chakra-ui/theme-tools";
 export const globalStyles = {
   colors: {
     brand: {
-      100: "#E9E3FF",
-      200: "#422AFB",
-      300: "#422AFB",
-      400: "#7551FF",
-      500: "#422AFB",
-      600: "#3311DB",
-      700: "#02044A",
-      800: "#190793",
-      900: "#11047A",
+      100: "#FFFCF3",
+      200: "#FFF4CA",
+      300: "#FFDC97",
+      400: "#FFC464",
+      500: "#FFAC31",
+      600: "#E5982B",
+      700: "#B0711F",
+      800: "#61350C",
+      900: "#472206",
     },
     brandScheme: {
       100: "#E9E3FF",
@@ -77,14 +77,38 @@ export const globalStyles = {
     gray: {
       100: "#FAFCFE",
     },
+    grass: {
+      50: "#E3FAD6",
+      100: "#C2F6AE",
+      200: "#93E380",
+      300: "#66C95B",
+      400: "#2FA52D",
+      500: "#208D28",
+      600: "#167625",
+      700: "#0E5F21",
+      800: "#084F1F",
+      900: "#074119",
+    },
+    black: {
+      50: "#E7E7E9",
+      100: "#CFCFD3",
+      200: "#A0A0A7",
+      300: "#71717A",
+      400: "#45454A",
+      500: "#18181A",
+      600: "#141415",
+      700: "#0F0F10",
+      800: "#0A0A0B",
+      900: "#050505",
+    },
   },
   styles: {
     global: (props) => ({
       body: {
         overflowX: "hidden",
-        bg: mode("secondaryGray.300", "navy.900")(props),
+        bg: mode("brand.200", "navy.900")(props),
         fontFamily: "Inter",
-        letterSpacing: "0.4px",
+        letterSpacing: "wide",
       },
       input: {
         color: "gray.700",

@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 
 export default function Footer() {
-    const textColor = useColorModeValue("gray.400", "white");
+    const textColor = useColorModeValue("brand.400", "white");
     const {toggleColorMode} = useColorMode();
     return (
         <Flex
@@ -43,7 +43,7 @@ export default function Footer() {
             }}>
                 {" "}
                 &copy; {1900 + new Date().getYear()}
-                <Text as='span' fontWeight='500' ms='4px'>
+                <Text as='span' fontWeight='500' ms='4px' >
                     Radiate</Text>
             </Text>
         </Flex>

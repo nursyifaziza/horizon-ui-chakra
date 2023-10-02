@@ -31,6 +31,19 @@ export const buttonStyles = {
             bg: mode("brand.600", "brand.400")(props),
           },
         }),
+        grass: (props) => ({
+          bg: mode("grass.500", "grass.400")(props),
+          color: "white",
+          _focus: {
+            bg: mode("grass.500", "grass.400")(props),
+          },
+          _active: {
+            bg: mode("grass.500", "grass.400")(props),
+          },
+          _hover: {
+            bg: mode("grass.600", "grass.400")(props),
+          },
+        }),
         darkBrand: (props) => ({
           bg: mode("brand.900", "brand.400")(props),
           color: "white",
