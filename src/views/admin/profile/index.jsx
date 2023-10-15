@@ -26,10 +26,6 @@ import {Box, Grid} from "@chakra-ui/react";
 // Custom components
 import Banner from "views/admin/profile/components/Banner";
 import General from "views/admin/profile/components/General";
-import Notifications from "views/admin/profile/components/Notifications";
-import Projects from "views/admin/profile/components/Projects";
-import Storage from "views/admin/profile/components/Storage";
-import Upload from "views/admin/profile/components/Upload";
 
 // Assets
 import banner from "assets/img/auth/banner.png";
@@ -62,11 +58,11 @@ export default function Overview() {
                     gridArea='1 / 1 / 2 / 2'
                     banner={banner}
                     avatar={avatar}
-                    name='Adela Parkson'
-                    job='Product Designer'
-                    posts='17'
-                    followers='9.7k'
-                    following='274'/>
+                    name='Psychologist name'
+                    job='Psychologist'
+                    acceptedAppointments='17'
+                    rejectedAppointments='5'
+                    reviews='10'/>
                 <General
                     gridArea={{
                     base: "2 / 1 / 3 / 2",

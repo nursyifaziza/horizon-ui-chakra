@@ -1,10 +1,10 @@
 // Chakra imports
-import { Avatar, Box, Flex, Text, useColorModeValue } from "@chakra-ui/react";
+import { Avatar, Box, Container, Flex, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import Card from "components/card/Card.js";
 import React from "react";
 
 export default function Banner(props) {
-  const { banner, avatar, name, job, posts, followers, following } = props;
+  const { banner, avatar, name, job, acceptedAppointments, rejectedAppointments, reviews } = props;
   // Chakra Color Mode
   const textColorPrimary = useColorModeValue("secondaryGray.900", "white");
   const textColorSecondary = "gray.400";
@@ -39,26 +39,26 @@ export default function Banner(props) {
       <Flex w='max-content' mx='auto' mt='26px'>
         <Flex mx='auto' me='60px' align='center' direction='column'>
           <Text color={textColorPrimary} fontSize='2xl' fontWeight='700'>
-            {posts}
+            {acceptedAppointments}
           </Text>
-          <Text color={textColorSecondary} fontSize='sm' fontWeight='400'>
-            Posts
+          <Text color={textColorSecondary} fontSize='xs' fontWeight='400'>
+            accepted<br/>appointments
           </Text>
         </Flex>
         <Flex mx='auto' me='60px' align='center' direction='column'>
           <Text color={textColorPrimary} fontSize='2xl' fontWeight='700'>
-            {followers}
+            {rejectedAppointments}
           </Text>
-          <Text color={textColorSecondary} fontSize='sm' fontWeight='400'>
-            Followers
+          <Text color={textColorSecondary} fontSize='xs' fontWeight='400'>
+          rejected<br/>appointments
           </Text>
         </Flex>
         <Flex mx='auto' align='center' direction='column'>
           <Text color={textColorPrimary} fontSize='2xl' fontWeight='700'>
-            {following}
+            {reviews}
           </Text>
-          <Text color={textColorSecondary} fontSize='sm' fontWeight='400'>
-            Following
+          <Text color={textColorSecondary} fontSize='xs' fontWeight='400'>
+            reviews
           </Text>
         </Flex>
       </Flex>

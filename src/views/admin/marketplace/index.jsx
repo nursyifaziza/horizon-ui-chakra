@@ -23,11 +23,12 @@
 import React from "react";
 
 // Chakra imports
-import {Box, Stack, Container, VStack, Flex} from "@chakra-ui/react";
+import {Stack, Container, VStack} from "@chakra-ui/react";
 
 // Assets
 import EventCalendar from "components/calendar/MiniCalendar"
 import TodayAppointments from "../default/components/TodayAppointments";
+import Schedule from "../default/components/Schedule";
 
 export default function Marketplace() {
     return (
@@ -43,7 +44,7 @@ export default function Marketplace() {
                     <TodayAppointments/>
                 </VStack>
                 <Container>
-                    <TodayAppointments/>
+                    <Schedule/>
                 </Container>
             </Stack>
         </Stack>
