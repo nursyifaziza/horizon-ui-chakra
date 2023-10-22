@@ -28,7 +28,7 @@ export default function Schedule(props) {
             {...rest}>
 
             <Stack direction="row" spacing="auto" align="center">
-                <FullCalendar plugins={[timeGridPlugin]} initialView="timeGridWeek"/>
+                <FullCalendar height={"100vh"} plugins={[timeGridPlugin]} initialView="timeGridWeek"/>
             </Stack>
         </Card>
     );
